@@ -4,18 +4,20 @@ header {
 
   width: 100%;
   background: #333;
-  height: 60px;
+  height: 40px;
   position: absolute;
   top: 0;
   left: 0;
+
 }
 
 header h1 {
 
   text-align: center;
   color: white;
-  font-size: 30px;
+  font-size: 110%;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
 }
 
 /* LINKS */
@@ -25,29 +27,31 @@ nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  overflow: hidden;
+  overflow: auto;
   background-color: #333;
 
 }
 
-header nav ul li {
+ header nav ul li {
 
   float: left;
 
-}
+} 
 
 header nav ul li a {
 
-  display: block;
+  display: flex;
   color: white;
   text-align: center;
-  padding: 14px 16px;
+  padding: 8px 6px;
   text-decoration: none;
 
 }
 
 .active {
+
   background-color: #4CAF50;
+  
 }
 
 /* FOOTER */
@@ -56,12 +60,132 @@ footer {
 
   width: 100%;
   background: #333;
-  height: 75px;
+  height: 50px;
   position: absolute;
   text-align: center;
   color: white;
   bottom: 0;
   left: 0;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 70%;
  
+}
+
+/* CONTENT */
+
+/* FORMULARIO */
+
+#content #top {
+
+  position: absolute;
+  visibility: visible;
+  top: 17%;
+  left: 11%;
+  justify-content: center;
+
+}
+
+input[type=text], input[type=password] {
+
+  margin-bottom: 10px;
+  width: 90%;
+  padding: 3px;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 1px solid #4CAF50;
+
+}
+
+label {
+
+  font-family: 'Courier New', Courier, monospace;
+}
+
+button {
+
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 90%;
+  
+}
+
+/* CONTENEDOR IFRAME */
+
+#content #bottom {
+
+  position: fixed;
+  visibility: visible;
+  bottom: 15%;
+  
+}
+
+@media only screen and (min-width: 768px) {
+
+  /* CONTENT */
+
+  /* FORMULARIO */
+
+  #content #top {
+
+    position: absolute;
+    visibility: visible;
+    top: 17%;
+    left: 23%;
+    justify-content: center;
+
+  }
+
+  input[type=text], input[type=password] {
+
+    margin-bottom: 10px;
+    width: 140%;
+    padding: 3px;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid #4CAF50;
+
+  }
+
+  label {
+
+    font-family: 'Courier New', Courier, monospace;
+
+  }
+
+  button {
+
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 8px;
+    width: 100%;
+    margin-left: 21%;
+    
+  }
+
+  /* CONTENEDOR IFRAME */
+
+  #content #bottom {
+
+    position: fixed;
+    visibility: visible;
+    bottom: 12%;
+    left: 18%;
+    
+  }
+
+  #content #bottom iframe {
+
+    width: 500px;
+    height: 200px;
+
+  }
+
+}
+
+@media only screen and (min-width: 1200px) {
+
 }
