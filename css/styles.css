@@ -7,6 +7,10 @@ body {
   margin: 0;
 }
 
+content {
+  text-align: center;
+}
+
 /* HEADER */
 
 #header {
@@ -55,6 +59,7 @@ body {
 /* MAIN */
 
 #main {
+  
   -ms-flex: 70%;
   flex: 70%;
   background-color: white;
@@ -63,7 +68,9 @@ body {
 }
 
 #main h2 {
+
   text-align: center;
+
 }
 
 /* FOOTER */
