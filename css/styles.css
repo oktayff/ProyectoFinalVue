@@ -9,6 +9,7 @@ body {
 
 content {
   text-align: center;
+  margin-left: 20px;
 }
 
 /* HEADER */
@@ -64,6 +65,7 @@ content {
   flex: 70%;
   background-color: white;
   padding: 20px;
+  padding-bottom: 0;
   
 }
 
