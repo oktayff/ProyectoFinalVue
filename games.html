@@ -4,9 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Movies</title>
+    <link rel="stylesheet" type="text/css" href="css/details.css">
+    <title>List of Games</title>
 </head>
 <body>
-    
+    <div class="content">
+        <div class="header" id="header">
+            <h1>GameArena</h1>
+            <p>Your favourite gaming website.</p>
+        </div>
+
+        <div class="container" id="navbar">
+            <a href="index.html">Home</a>
+            <a href="games.html">Games</a>
+            <a href="platforms.html">Platforms</a>
+            <a href="genres.html">Genres</a>
+        </div>
+
+        <div class="search" id="busqueda" v-if="gamesFilter && gamesFilter.length">
+            <input type="text" placeholder="Search for games by release date..." v-model="gameSearch">
+            <input type="submit" value="Search">
+        </div>
+
+        <br>
+
+        <div class="container" align="center" style="overflow-x: auto;" border=1>
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Release Date</th>
+                    <th>Rating</th>
+                    <th>Metacritic</th>
+                </tr>
+                <tr v-for="results of gamesFilter">
+                    <td>lol</td>
+                    <td>lol</td>
+                    <td>lol</td>
+                    <td>lol</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="footer" id="footer">
+            <p>All Rights Reserved. Copyright 2020</p>
+            <a href="#">Contact Us</a>
+            <a href="#">Privacy Policy</a>
+            <a class="icon"><i class="fab fa-instagram"></i></a>
+            <a class="icon"><i class="fab fa-facebook-square"></i></a>
+            <a class="icon"><i class="fab fa-twitter-square"></i></a>
+            <a class="icon"><i class="fab fa-github-square"></i></a>
+        </div>
+    </div>   
 </body>
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <script src="https://unpkg.com/vue"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="app.js"></script>
+
 </html>
