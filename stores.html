@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="css/details.css">
-    <title>List of Genres</title>
+    <title>List of Stores</title>
 </head>
 <body>
     <div class="content">
@@ -28,15 +28,17 @@
 
         <br>
 
-        <div class="container" align="center" style="overflow-x: auto;" id="genres">
+        <div class="container" align="center" style="overflow-x: auto;" id="stores">
             <table>
                 <tr>
                     <th>Name</th>
+                    <th>Domain</th>
                     <th>Games count</th>
                 </tr>
-                <tr v-for="genre in genres">
-                    <td>{{ genre.name }}</td>
-                    <td>{{ genre.games_count }}</td>
+                <tr v-for="store in stores">
+                    <td>{{ store.name }}</td>
+                    <td><a :href="store.domain">{{ store.domain }}</a></td>
+                    <td>{{ store.games_count }}</td>
                 </tr>
             </table>
         </div>

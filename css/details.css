@@ -116,10 +116,11 @@ td {
 
 #footer {
 
+    margin-top: 10px;
     padding: 20px;
     width: 100%;
     background: #333;
-    position: absolute;
+    position: relative;
     text-align: center;
     color: white;
     font-family: 'Courier New', Courier, monospace;
