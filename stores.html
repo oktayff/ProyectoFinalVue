@@ -37,7 +37,7 @@
                 </tr>
                 <tr v-for="store in stores">
                     <td>{{ store.name }}</td>
-                    <td><a :href="store.domain">{{ store.domain }}</a></td>
+                    <td><a :href="'https://' + store.domain" target="_blank">{{store.domain}}</td>
                     <td>{{ store.games_count }}</td>
                 </tr>
             </table>
