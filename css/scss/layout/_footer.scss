@@ -1,0 +1,51 @@
+#footer {
+
+    margin-top: 10px;
+    padding: 20px;
+    width: 100%;
+    background: $footerBackground;
+    position: relative;
+    text-align: center;
+    color: $footerTextColor;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: $footerFontSize;
+    bottom: 0;
+}
+
+#footer p {
+    font-size: $footerPFontSize;
+
+}
+
+@media (min-width: 375px) {
+
+    #footer {
+        padding: 30px;
+        font-size: $footerFontSize375;
+    }
+}
+
+@media (min-width: 425px) {
+
+    #footer {
+        font-size: $footerFontSize425;
+    }
+}
+
+@media (min-width: 768px) {
+
+    #footer {
+        font-size: $footerFontSize768;
+    }
+
+    #footer p {
+        font-size: $footerPFontSize768;
+    }
+}
+
+@media (min-width: 1440px) {
+
+    #footer p {
+        font-size: $footerPFontSize1440;
+    }
+}

@@ -1,0 +1,48 @@
+#navbar {
+    overflow: hidden;
+    background-color: $navbarBackgroundColor;
+    position: sticky;
+    top: 0;
+}
+  
+#navbar a {
+    float: left;
+    display: block;
+    color: $navbarAColor;
+    text-align: center;
+    padding: $navbarAPadding;
+    text-decoration: none;
+}
+  
+#navbar a.right {
+    float: right;
+}
+  
+#navbar a:hover{
+    background-color: $navbarAHoverBackgroundColor;
+    color: $navbarAHoverColor;
+}
+  
+#navbar a.active {
+    background-color: $navbarAActiveBackgroundColor;
+    color: $navbarAActiveColor;
+}
+
+@media (min-width: 375px) {
+    #navbar {
+        padding: $navbarPadding375;
+    }
+}
+
+@media (min-width: 425px) {
+    #navbar {
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 768px) {
+    #navbar a {
+        font-size: $navbarAFontSize768;
+    }
+}
+

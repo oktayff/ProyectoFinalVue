@@ -1,0 +1,15 @@
+table {
+
+    padding: $tablePadding;
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 95%;
+    border: $tableBorder;
+
+}
+
+th,
+td {
+    text-align: center;
+    padding: $tablethtdPadding;
+}
