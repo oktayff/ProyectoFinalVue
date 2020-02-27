@@ -21,15 +21,17 @@
             <a href="genres.html">Genres</a>
         </div>
 
-        <div class="search" id="busqueda" v-if="gamesFilter && gamesFilter.length">
-            <input type="text" placeholder="Search for games by name..." v-model="gameSearch">
-            <input type="submit" value="Search">
-        </div>
+        
 
-        <br>
 
         <div class="container" align="center" style="overflow-x: auto;" id="games">
-            <table>
+            <div class="search" id="busqueda">
+                <input type="text" placeholder="Search for games by name..." v-model="gameSearch" v-model="existe" @change="gamesFilter()">
+            </div>
+        
+        <br>
+
+            <table v-if="filteredGames.length == 0">
                 <tr>
                     <th>Name</th>
                     <th>Release Date</th>
@@ -37,6 +39,21 @@
                     <th>Metacritic</th>
                 </tr>
                 <tr v-for="game of games">
+                    <td>{{ game.name }}</td>
+                    <td>{{ game.released }}</td>
+                    <td>{{ game.rating }}</td>
+                    <td>{{ game.metacritic }}</td>
+                </tr>
+            </table>
+
+            <table v-if="filteredGames.length > 0">
+                <tr>
+                    <th>Name</th>
+                    <th>Release Date</th>
+                    <th>Rating</th>
+                    <th>Metacritic</th>
+                </tr>
+                <tr v-for="game of filteredGames">
                     <td>{{ game.name }}</td>
                     <td>{{ game.released }}</td>
                     <td>{{ game.rating }}</td>
